@@ -2,58 +2,126 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Puppy School Harpenden</title>
+    <title>Puppy School Harpenden – Professional Puppy Training in Harpenden</title>
+    <meta name="description"
+          content="Professional, friendly puppy training at Puppy School Harpenden. Small classes, positive reinforcement, flexible schedules.">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- ---- CSS ---------------------------------------------------- -->
+
+    <!-- ---------- Google Font (Poppins – clean & friendly) ---------- -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+          rel="stylesheet">
+
+    <!-- ---------- CSS (all in‑line for a true single‑page file) ---------- -->
     <style>
         /* ==== Reset & basic typography ==== */
         *, *::before, *::after { box-sizing:border-box; margin:0; padding:0; }
         html { scroll-behavior:smooth; }
-        body { font-family:Arial,Helvetica,sans-serif; line-height:1.6; color:#333; background:#fafafa; }
+        body {
+            font-family:'Poppins',Arial,Helvetica,sans-serif;
+            line-height:1.6;
+            color:#333;
+            background:#fafafa;
+        }
 
         /* ==== Header & navigation ==== */
-        .site-header { background:#ff8c00; color:#fff; padding:1rem 2rem;
-                        display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; }
-        .logo { height:50px; margin-right:.5rem; }
-        .site-header h1 { margin:0; font-size:1.5rem; }
-        nav ul { list-style:none; display:flex; gap:1rem; }
-        nav a { color:#fff; text-decoration:none; font-weight:500; }
-        nav a.active, nav a:hover { text-decoration:underline; }
+        .site-header {
+            background:#0066cc;          /* professional deep blue */
+            color:#fff;
+            padding:1rem 2rem;
+            display:flex;
+            flex-wrap:wrap;
+            align-items:center;
+            justify-content:space-between;
+        }
+        .site-header h1 {
+            margin:0;
+            font-size:1.6rem;
+            font-weight:600;
+        }
+        nav ul {
+            list-style:none;
+            display:flex;
+            gap:1rem;
+        }
+        nav a {
+            color:#fff;
+            text-decoration:none;
+            font-weight:500;
+        }
+        nav a.active,
+        nav a:hover { text-decoration:underline; }
 
         /* ==== Main sections ==== */
         main { max-width:1200px; margin:2rem auto; padding:0 1rem; }
         .page-section { display:none; animation:fadeIn .4s ease-out forwards; }
         .page-section.active { display:block; }
 
-        @keyframes fadeIn { from{opacity:0;transform:translateY(10px);} to{opacity:1;transform:translateY(0);} }
+        @keyframes fadeIn {
+            from{opacity:0;transform:translateY(10px);}
+            to{opacity:1;transform:translateY(0);}
+        }
 
-        .hero-img { width:100%; max-height:400px; object-fit:cover; margin-top:1rem; border-radius:8px; }
+        .hero-img {
+            width:100%;
+            max-height:400px;
+            object-fit:cover;
+            margin-top:1rem;
+            border-radius:8px;
+        }
 
         /* ==== Cards (Courses) ==== */
-        .cards { display:flex; flex-wrap:wrap; gap:1.5rem; margin-top:1rem; }
-        .card { background:#fff; border:1px solid #ddd; border-radius:8px; padding:1rem;
-                 flex:1 1 260px; box-shadow:0 2px 4px rgba(0,0,0,.05); }
-        .price { font-weight:bold; color:#ff8c00; }
+        .cards {
+            display:flex;
+            flex-wrap:wrap;
+            gap:1.5rem;
+            margin-top:1rem;
+        }
+        .card {
+            background:#fff;
+            border:1px solid #ddd;
+            border-radius:8px;
+            padding:1rem;
+            flex:1 1 260px;
+            box-shadow:0 2px 4px rgba(0,0,0,.05);
+        }
+        .price { font-weight:600; color:#0066cc; }
 
         /* ==== Gallery ==== */
-        .gallery-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
-                        gap:.8rem; margin-top:1rem; }
-        .gallery-grid img { width:100%; height:150px; object-fit:cover; border-radius:4px; }
+        .gallery-grid {
+            display:grid;
+            grid-template-columns:repeat(auto-fill,minmax(150px,1fr));
+            gap:.8rem;
+            margin-top:1rem;
+        }
+        .gallery-grid img {
+            width:100%; height:150px; object-fit:cover; border-radius:4px;
+        }
 
         /* ==== Contact form ==== */
-        #contactForm { max-width:500px; display:grid; gap:.8rem; margin-top:1rem; }
+        #contactForm {
+            max-width:500px;
+            display:grid;
+            gap:.8rem;
+            margin-top:1rem;
+        }
         #contactForm label { font-weight:500; }
-        #contactForm input, #contactForm textarea {
-            width:100%; padding:.6rem; border:1px solid #ccc; border-radius:4px; font-family:inherit;
+        #contactForm input,
+        #contactForm textarea {
+            width:100%; padding:.6rem; border:1px solid #ccc;
+            border-radius:4px; font-family:inherit;
         }
         #contactForm button {
-            background:#ff8c00; color:#fff; border:none; padding:.8rem 1.2rem;
-            border-radius:4px; cursor:pointer; font-size:1rem;
+            background:#0066cc; color:#fff; border:none;
+            padding:.8rem 1.2rem; border-radius:4px;
+            cursor:pointer; font-size:1rem;
         }
-        #contactForm button:hover { background:#e07b00; }
+        #contactForm button:hover { background:#0055aa; }
 
         /* ==== Footer ==== */
-        .site-footer { background:#333; color:#ddd; text-align:center; padding:1rem; margin-top:3rem; }
+        .site-footer {
+            background:#333; color:#ddd; text-align:center;
+            padding:1rem; margin-top:3rem;
+        }
 
         /* ==== Responsive tweaks ==== */
         @media (max-width:768px) {
@@ -65,8 +133,6 @@
 <body>
 
 <header class="site-header">
-    <!-- Replace logo.png with your own file – optional -->
-    <img src="https://via.placeholder.com/80x50?text=Logo" alt="Logo" class="logo">
     <h1>Puppy School Harpenden</h1>
     <nav>
         <ul>
@@ -83,18 +149,18 @@
     <!-- ==== Home ==== -->
     <section id="home" class="page-section active">
         <h2>Welcome to Harpenden’s Happy Pups!</h2>
-        <p>We teach puppies to become well‑behaved, confident companions.</p>
+        <p>Professional, friendly puppy training in a small‑group environment.</p>
         <img src="https://source.unsplash.com/featured/?puppy" alt="Cute puppy" class="hero-img">
     </section>
 
     <!-- ==== About ==== -->
     <section id="about" class="page-section">
         <h2>About Us</h2>
-        <p>Founded by certified dog trainer Emma Green, our school offers a caring environment for puppies aged 8‑16 weeks.</p>
+        <p>Founded by certified dog trainer Emma Green, we focus on positive‑reinforcement methods, small class sizes (max 4 pups), and flexible scheduling.</p>
         <ul>
-            <li>Small class sizes (max 4 pups)</li>
-            <li>Positive‑reinforcement methods</li>
-            <li>Flexible weekday & weekend sessions</li>
+            <li>Small, attentive groups</li>
+            <li>Certified trainer with years of experience</li>
+            <li>Convenient weekday & weekend sessions</li>
         </ul>
     </section>
 
@@ -104,17 +170,17 @@
         <div class="cards">
             <article class="card">
                 <h3>Basic Obedience</h3>
-                <p>Sit, stay, recall – the foundations every puppy needs.</p>
+                <p>Sit, stay, recall – essential skills for every puppy.</p>
                 <p class="price">£120 / 6 weeks</p>
             </article>
             <article class="card">
                 <h3>Socialisation</h3>
-                <p>Playtime with other puppies and exposure to everyday sights.</p>
+                <p>Playtime with peers and exposure to everyday sights.</p>
                 <p class="price">£100 / 4 weeks</p>
             </article>
             <article class="card">
                 <h3>Advanced Tricks</h3>
-                <p>Fun tricks that impress friends and keep minds sharp.</p>
+                <p>Fun tricks that keep minds sharp and impress friends.</p>
                 <p class="price">£150 / 8 weeks</p>
             </article>
         </div>
@@ -153,7 +219,7 @@
             <p><strong>Email:</strong> hello@puppyschoolharpenden.com</p>
             <p><strong>Address:</strong> 12 Bark Lane, Harpenden, AL5 1AB</p>
 
-            <!-- Simple embedded map – replace the query if you have a precise address -->
+            <!-- Simple embedded map of Harpenden -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.578939617966!2d-0.39329268428103874!3d51.80593817969781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487616ba4d2c0a83%3A0x6c610703bf2e354d!2sHarpenden%2C%20UK!5e0!3m2!1sen!2sus!4v1728347200000"
                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -165,27 +231,26 @@
     <p>© 2024 Puppy School Harpenden – All rights reserved.</p>
 </footer>
 
-<!-- ---- JavaScript (hash routing + simple form handling) ---- -->
+<!-- ---------- JavaScript (hash routing + simple form handling) ---------- -->
 <script>
-    // ---------- SPA router ----------
+    // Simple hash‑based router
     const sections = document.querySelectorAll('.page-section');
     const navLinks = document.querySelectorAll('.nav-link');
 
     function route() {
         const hash = window.location.hash.replace('#','') || 'home';
-
-        sections.forEach(sec => sec.classList.toggle('active', sec.id===hash));
-        navLinks.forEach(link => {
-            const target = link.getAttribute('href').replace('#','');
-            link.classList.toggle('active', target===hash);
+        sections.forEach(s => s.classList.toggle('active', s.id===hash));
+        navLinks.forEach(l => {
+            const target = l.getAttribute('href').replace('#','');
+            l.classList.toggle('active', target===hash);
         });
     }
 
     window.addEventListener('hashchange', route);
     window.addEventListener('DOMContentLoaded', () => {
-        route();  // initial view
+        route();                       // initial view
 
-        // smooth scroll fallback (prevents the default jump)
+        // make nav clicks update the hash without jumping
         navLinks.forEach(l => {
             l.addEventListener('click', e => {
                 e.preventDefault();
@@ -193,13 +258,12 @@
             });
         });
 
-        // ---------- Contact form ----------
-        const frm = document.getElementById('contactForm');
-        frm.addEventListener('submit', e => {
+        // contact form – simple “thank‑you” alert
+        const form = document.getElementById('contactForm');
+        form.addEventListener('submit', e => {
             e.preventDefault();
-            // In a real project you would POST this data; for demo just thank the user.
-            alert('Thank you! We’ll reply soon.');
-            frm.reset();
+            alert('Thank you! We’ll get back to you soon.');
+            form.reset();
         });
     });
 </script>
