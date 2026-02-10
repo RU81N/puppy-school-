@@ -48,7 +48,7 @@
             justify-content:space-between;
         }
         .site-header h1{ margin:0; font-size:1.8rem; font-weight:600; }
-        nav ul{ list-style:none; display:flex; gap:0.9rem; }
+        nav ul{ list-style:none; display:flex; gap:1rem; }
         nav a{
             color:#fff;
             text-decoration:none;
@@ -161,7 +161,7 @@
             margin:0 auto; display:block;
         }
 
-        /* ==== Testimonials rotator ==== */
+        /* ==== Testimonials rotating block ==== */
         .testimonials{
             position:relative; overflow:hidden; height:200px;
         }
@@ -208,20 +208,10 @@
     <nav>
         <ul>
             <li><a href="#home" class="nav-link active">Home</a></li>
-            <li><a href="#why" class="nav-link">Why Choose Us</a></li>
             <li><a href="#services" class="nav-link">Services</a></li>
-            <li><a href="#values" class="nav-link">Our Values</a></li>
-            <li><a href="#pricing" class="nav-link">Pricing</a></li>
-            <li><a href="#team" class="nav-link">Trainer</a></li>
             <li><a href="#courses" class="nav-link">Courses</a></li>
             <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#events" class="nav-link">Events</a></li>
             <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
-            <li><a href="#faq" class="nav-link">FAQ</a></li>
-            <li><a href="#newsletter" class="nav-link">Newsletter</a></li>
-            <li><a href="#social" class="nav-link">Instagram</a></li>
-            <li><a href="#reviews" class="nav-link">Reviews</a></li>
-            <li><a href="#downloads" class="nav-link">Downloads</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
@@ -234,9 +224,8 @@
         <p>Professional, friendly puppy training in a small‑group, reward‑based environment.</p>
         <a href="#contact" class="btn">Book a Class</a>
 
-        <!-- ***** Updated YouTube video ***** -->
+        <!-- Updated YouTube video – replace YOUR_NEW_VIDEO_ID -->
         <div style="position:relative;padding-top:56.25%;margin-top:1rem;">
-            <!-- Example video – replace YOUR_NEW_VIDEO_ID with your own -->
             <iframe src="https://www.youtube.com/embed/YOUR_NEW_VIDEO_ID?rel=0&showinfo=0"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:8px;"
                     allowfullscreen title="Puppy School Intro"></iframe>
@@ -244,20 +233,6 @@
 
         <img src="https://images.unsplash.com/photo-1601758003122-5a2fa838c389?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwyfHxwdXBweXxlbnwwfHx8fDE2ODk3MjUzMDQ&ixlib=rb-4.0.3&q=80&w=1200"
              alt="Puppy in training class" class="hero-img">
-    </section>
-
-    <!-- ===================== Why Choose Us ===================== -->
-    <section id="why" class="page-section">
-        <h2>Why Choose Us?</h2>
-        <ul>
-            <li>✅ Small classes – maximum 4 puppies per session.</li>
-            <li>✅ Certified trainer (ABTC‑registered) with 10+ years experience.</li>
-            <li>✅ Positive‑reinforcement – no harsh corrections.</li>
-            <li>✅ Flexible weekday & weekend times.</li>
-            <li>✅ Free welcome manual + treats for every new enrolment.</li>
-        </ul>
-        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMHRyYWluaW5nfGVufDB8fHx8MTY4OTcyNTM1Nw&ixlib=rb-4.0.3&q=80&w=1000"
-             alt="Trainer with puppies" style="width:100%;max-height:300px;object-fit:cover;border-radius:8px;margin-top:1rem;">
     </section>
 
     <!-- ===================== Services ===================== -->
@@ -270,68 +245,6 @@
             <article class="card"><h3>Behaviour Support</h3><p>Address reactivity, barking, separation anxiety, and more.</p></article>
             <article class="card"><h3>Workshops & Scent Classes</h3><p>Recall, lead‑walking, sniff‑training and more.</p></article>
             <article class="card"><h3>Kids‑Around‑Dogs</h3><p>Teaching children confidence and safe interaction with dogs.</p></article>
-        </div>
-    </section>
-
-    <!-- ===================== Our Values ===================== -->
-    <section id="values" class="page-section">
-        <h2>Our Values</h2>
-        <div class="cards">
-            <article class="card">
-                <i class="fas fa-smile-beam icon" style="font-size:2rem;color:var(--clr-teal);margin-bottom:.5rem;"></i>
-                <h3>Positive</h3>
-                <p>All training is reward‑based – no harsh corrections.</p>
-            </article>
-            <article class="card">
-                <i class="fas fa-leaf icon" style="font-size:2rem;color:var(--clr-teal);margin-bottom:.5rem;"></i>
-                <h3>Ethical</h3>
-                <p>We respect each puppy’s pace and individual needs.</p>
-            </article>
-            <article class="card">
-                <i class="fas fa-paw icon" style="font-size:2rem;color:var(--clr-teal);margin-bottom:.5rem;"></i>
-                <h3>Fun</h3>
-                <p>Playful games make learning enjoyable for you and your puppy.</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- ===================== Pricing ===================== -->
-    <section id="pricing" class="page-section">
-        <h2>Pricing</h2>
-        <div class="cards" style="gap:2rem;">
-            <article class="card">
-                <h3>Basic Obedience</h3>
-                <p class="price">£120</p>
-                <p>6 weeks – 1 session per week.</p>
-                <p><strong>Early‑bird:</strong> £110 if you book before 1 May.</p>
-            </article>
-            <article class="card">
-                <h3>Socialisation</h3>
-                <p class="price">£100</p>
-                <p>4 weeks – group play & exposure.</p>
-                <p><strong>Bundle:</strong> + £20 for a Pup‑Play kit.</p>
-            </article>
-            <article class="card">
-                <h3>Advanced Tricks</h3>
-                <p class="price">£150</p>
-                <p>8 weeks – fun tricks & confidence building.</p>
-                <p><strong>Free:</strong> Training manual & treats.</p>
-            </article>
-        </div>
-    </section>
-
-    <!-- ===================== Trainer / Team ===================== -->
-    <section id="team" class="page-section">
-        <h2>Meet the Trainer</h2>
-        <div class="cards">
-            <article class="card">
-                <img src="https://images.unsplash.com/photo-1608206409405-01b2b5aab0c9?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxkb2clMjB0cmFpbmluZ3xlbnwwfHx8fDE2ODk3MjU0NDc&ixlib=rb-4.0.3&q=80&w=300"
-                     alt="Emma Green" style="width:100%;height:200px;object-fit:cover;border-radius:6px;margin-bottom:.5rem;">
-                <h3>Emma Green</h3>
-                <p>ABTC‑registered trainer, 10 years experience, specialist in positive‑reinforcement.</p>
-                <p><i class="fas fa-award"></i> Certified Animal Behaviourist</p>
-            </article>
-            <!-- Duplicate the <article> block for more staff if needed -->
         </div>
     </section>
 
@@ -372,28 +285,6 @@
         </div>
     </section>
 
-    <!-- ===================== Events / Workshops ===================== -->
-    <section id="events" class="page-section">
-        <h2>Upcoming Workshops</h2>
-        <ul style="list-style:none;">
-            <li style="margin-bottom:1rem;">
-                <strong>Recall & Lead‑Walking</strong> – 12 May, 10‑12 am (Harpenden Community Centre) –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/recall" class="btn"
-                   target="_blank">Book</a>
-            </li>
-            <li style="margin-bottom:1rem;">
-                <strong>Fun Tricks for Kids</strong> – 19 May, 2‑4 pm –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/tricks" class="btn"
-                   target="_blank">Book</a>
-            </li>
-            <li style="margin-bottom:1rem;">
-                <strong>Puppy Socialisation Games</strong> – 26 May, 11‑1 pm –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/socialisation" class="btn"
-                   target="_blank">Book</a>
-            </li>
-        </ul>
-    </section>
-
     <!-- ===================== Testimonials ===================== -->
     <section id="testimonials" class="page-section">
         <h2>What Clients Say</h2>
@@ -420,61 +311,6 @@
                 tpls[cur].classList.add('active');
             }, 5000);
         </script>
-    </section>
-
-    <!-- ===================== FAQ ===================== -->
-    <section id="faq" class="page-section">
-        <h2>Frequently Asked Questions</h2>
-        <details><summary>What age should my puppy be to join?</summary><p>We accept puppies from 8 weeks up to 20 weeks (or a little older if the vet clears them).</p></details>
-        <details><summary>Do I need to bring my own treats?</summary><p>All treats used during class are provided. You may bring a favourite snack for home practice.</p></details>
-        <details><summary>How long is each session?</summary><p>Each class runs for 90 minutes, once per week.</p></details>
-        <details><summary>What is your cancellation policy?</summary><p>We ask for 48 hours notice; otherwise the full class fee applies.</p></details>
-        <details><summary>Do you offer private 1‑to‑1 sessions?</summary><p>Yes – the “121” service can be booked via the “Events” section or by contacting us directly.</p></details>
-        <details><summary>Can I bring my own dog to the first class?</summary><p>All puppies must be up‑to‑date on vaccinations and cleared by a vet before attending.</p></details>
-    </section>
-
-    <!-- ===================== Newsletter ===================== -->
-    <section id="newsletter" class="page-section">
-        <h2>Stay Updated</h2>
-        <p>Get training tips, class updates and special offers directly to your inbox.</p>
-        <form action="YOUR_MAILCHIMP_FORM_ACTION"
-              method="post" target="_blank" class="form-wrapper">
-            <div class="form-group">
-                <label for="mce-EMAIL">Email address</label>
-                <i class="fas fa-envelope icon"></i>
-                <input type="email" name="EMAIL" id="mce-EMAIL"
-                       placeholder="you@example.com" required>
-            </div>
-            <button type="submit" class="btn">Subscribe</button>
-        </form>
-    </section>
-
-    <!-- ===================== Instagram Feed ===================== -->
-    <section id="social" class="page-section">
-        <h2>Instagram Feed</h2>
-        <!-- LightWidget (replace YOUR_WIDGET_ID) -->
-        <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
-        <iframe src="https://lightwidget.com/widgets/YOUR_WIDGET_ID.html"
-                scrolling="no"
-                allowtransparency="true"
-                class="gallery-grid"
-                style="width:100%;border:0;overflow:hidden;"></iframe>
-    </section>
-
-    <!-- ===================== Google Reviews ===================== -->
-    <section id="reviews" class="page-section">
-        <h2>What Our Clients Say (Google Reviews)</h2>
-        <script src="https://unpkg.com/google-reviews-widget@latest/dist/widget.min.js"></script>
-        <div id="google-reviews"
-             data-place-id="YOUR_PLACE_ID"
-             data-limit="5"></div>
-    </section>
-
-    <!-- ===================== Downloadable PDF ===================== -->
-    <section id="downloads" class="page-section">
-        <h2>Free Resources</h2>
-        <p>Download our “Puppy Starter Kit” – a printable checklist, basic commands sheet and treat‑guide.</p>
-        <a href="YOUR_PDF_URL.pdf" class="btn" target="_blank" download>Download PDF</a>
     </section>
 
     <!-- ===================== Contact ===================== -->
@@ -533,10 +369,10 @@
     </div>
 </footer>
 
-<!-- ===================== Live Chat (Tidio) ===================== -->
+<!-- Live Chat (Tidio) – replace YOUR_TIDIO_SITE_ID -->
 <script src="//code.tidio.co/YOUR_TIDIO_SITE_ID.js" async></script>
 
-<!-- ===================== GDPR Cookie Banner ===================== -->
+<!-- GDPR Cookie banner -->
 <div id="cookie-banner">
     <span>We use cookies to improve your experience. By continuing, you accept our <a href="#" style="color:#ff7043;">Cookie Policy</a>.</span>
     <button id="accept-cookies">Got it</button>
@@ -548,14 +384,13 @@
     if (localStorage.getItem('cookiesAccepted')) {
         banner.style.display = 'none';
     }
-
     acceptBtn.addEventListener('click', () => {
         localStorage.setItem('cookiesAccepted', 'true');
         banner.style.display = 'none';
     });
 </script>
 
-<!-- ---------- Simple SPA router (hash‑based) ---------- -->
+<!-- Simple hash‑based SPA router -->
 <script>
     const sections = document.querySelectorAll('.page-section');
     const navLinks = document.querySelectorAll('.nav-link');
@@ -571,14 +406,12 @@
     window.addEventListener('hashchange', route);
     window.addEventListener('DOMContentLoaded', () => {
         route();
-
         navLinks.forEach(l => {
             l.addEventListener('click', e => {
                 e.preventDefault();
                 window.location.hash = l.getAttribute('href');
             });
         });
-
         const form = document.getElementById('contactForm');
         form.addEventListener('submit', e => {
             e.preventDefault();
