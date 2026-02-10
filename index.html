@@ -210,10 +210,9 @@ main{
             <li><a href="#pricing" class="nav-link">Pricing</a></li>
             <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
             <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+            <li><a href="#reviews" class="nav-link">Reviews</a></li> <!-- single Reviews link -->
             <li><a href="#faq" class="nav-link">FAQ</a></li>
             <li><a href="#events" class="nav-link">Workshops</a></li>
-            <li><a href="#reviews" class="nav-link">Google Reviews</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
     </nav>
@@ -255,7 +254,7 @@ main{
             </div>
         </div>
 
-        <!-- ==== Quick‑info cards ==== -->
+        <!-- Quick‑info cards -->
         <div class="cards" style="margin-top:2rem;gap:1.8rem;">
             <article class="card" style="flex:1 1 260px;">
                 <i class="fas fa-users fa-2x" style="color:var(--clr-teal);margin-bottom:.5rem;"></i>
@@ -276,14 +275,13 @@ main{
             </article>
         </div>
 
-        <!-- ==== Hero video – replace YOUR_NEW_VIDEO_ID ==== -->
+        <!-- Hero video – replace YOUR_NEW_VIDEO_ID -->
         <div style="position:relative;padding-top:56.25%;margin-top:2rem;">
             <iframe src="https://www.youtube.com/embed/YOUR_NEW_VIDEO_ID?rel=0&showinfo=0"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:8px;"
                     allowfullscreen title="Puppy School Harpenden – Intro Video"></iframe>
         </div>
 
-        <!-- Optional static hero image for SEO -->
         <img src="https://images.unsplash.com/photo-1601758003122-5a2fa838c389?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwyfHxwdXBweXxlbnwwfHx8fDE2ODk3MjUzMDQ&ixlib=rb-4.0.3&q=80&w=1200"
              alt="Puppy in training class"
              class="hero-img"
@@ -293,7 +291,7 @@ main{
     <!-- ===================== About ===================== -->
     <section id="about" class="page-section">
         <h2>About Puppy School Harpenden</h2>
-        <p>Founded by <strong>Emma Green</strong>, a certified ABTC‑registered trainer with over ten years of experience, Puppy School Harpenden offers a warm, supportive environment where puppies learn the foundations of good behavior through positive, reward‑based methods.</p>
+        <p>Founded by <strong>Emma Green</strong>, a certified ABTC‑registered trainer with over ten years of experience, Puppy School Harpenden offers a warm, supportive environment where puppies learn the foundations of good behaviour through positive, reward‑based methods.</p>
 
         <div class="cards">
             <article class="card">
@@ -480,7 +478,7 @@ main{
             <img src="https://images.unsplash.com/photo-1537368919423-9ae54c51ecf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMGNhbmZyYW5jaWxpYW58ZW58MHx8fHwxNjg5NzI1NTg0&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Puppy on a leash learning to walk">
 
-            <!-- Row 4 (extra images) -->
+            <!-- Row 4 (extra) -->
             <img src="https://images.unsplash.com/photo-1598288374603-03c3b86b1ad5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMHRyYWluaW5nfGVufDB8fHx8MTY4OTcyNTYwMA&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Puppy getting a treat after a command">
             <img src="https://images.unsplash.com/photo-1591840078368-1a12f8143e1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHx0cmlhc19wdXJwb3NlJTIwZWxzZXJ0ZWZpY2V8ZW58MHx8fHwxNjg5NzI1NjE2&ixlib=rb-4.0.3&q=80&w=300"
@@ -492,9 +490,11 @@ main{
         </div>
     </section>
 
-    <!-- ===================== Reviews (formerly Testimonials) ===================== -->
-    <section id="testimonials" class="page-section">
+    <!-- ===================== Combined Reviews (Testimonials + Google) ===================== -->
+    <section id="reviews" class="page-section">
         <h2>Reviews</h2>
+
+        <!-- ---- Custom testimonial carousel ---- -->
         <div class="testimonials">
             <div class="testimonial active">
                 <p>“A friendly, professional class – the trainer really knows how to work with pups! Our 10‑week‑old Labrador is now obedient and confident.”</p>
@@ -509,6 +509,7 @@ main{
                 <p>— Malik, Redbourn</p>
             </div>
         </div>
+
         <script>
             const tpls = document.querySelectorAll('.testimonial');
             let cur = 0;
@@ -518,6 +519,14 @@ main{
                 tpls[cur].classList.add('active');
             }, 5000);
         </script>
+
+        <!-- ---- Google Reviews widget (real Google reviews) ---- -->
+        <h3 style="margin-top:2rem;">Customer Reviews (Google)</h3>
+        <script src="https://unpkg.com/google-reviews-widget@latest/dist/widget.min.js"></script>
+        <div id="google-reviews"
+             data-place-id="YOUR_PLACE_ID"
+             data-limit="5"></div>
+        <!-- Replace YOUR_PLACE_ID with the actual Google Place ID for Puppy School Harpenden -->
     </section>
 
     <!-- ===================== FAQ ===================== -->
@@ -569,16 +578,6 @@ main{
                    target="_blank">Book</a>
             </li>
         </ul>
-    </section>
-
-    <!-- ===================== Google Reviews ===================== -->
-    <section id="reviews" class="page-section">
-        <h2>Customer Reviews (Google)</h2>
-        <script src="https://unpkg.com/google-reviews-widget@latest/dist/widget.min.js"></script>
-        <div id="google-reviews"
-             data-place-id="YOUR_PLACE_ID"
-             data-limit="5"></div>
-        <!-- Replace YOUR_PLACE_ID with the real Google Place ID for Puppy School Harpenden -->
     </section>
 
     <!-- ===================== Contact ===================== -->
