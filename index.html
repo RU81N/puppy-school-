@@ -26,12 +26,12 @@ body{
     font-family:'Poppins',Arial,sans-serif;
     line-height:1.6;
     color:#333;
-    background:#f5f5f5;
+    background:#fdf5e6;   /* light background for contrast */
 }
 :root{
-    --clr-primary:#002b5c;   /* deep navy */
-    --clr-accent:#ff7043;    /* coral CTA */
-    --clr-teal:#006d77;      /* teal highlight */
+    --clr-primary:#BF5700;   /* burnt orange – header/footer */
+    --clr-accent:#FF7F00;    /* brighter orange – buttons & highlights */
+    --clr-teal:#006d77;      /* teal (kept for small accents) */
     --clr-bg:#fff;
 }
 
@@ -83,7 +83,7 @@ main{
     font-weight:500;
     transition:background .2s;
 }
-.btn:hover{background:#e65a2e}
+.btn:hover{background:#e66a00}
 
 /* ==== Cards ==== */
 .cards{
@@ -210,7 +210,7 @@ main{
             <li><a href="#pricing" class="nav-link">Pricing</a></li>
             <li><a href="#curriculum" class="nav-link">Curriculum</a></li>
             <li><a href="#gallery" class="nav-link">Gallery</a></li>
-            <li><a href="#reviews" class="nav-link">Reviews</a></li> <!-- single Reviews link -->
+            <li><a href="#reviews" class="nav-link">Reviews</a></li>
             <li><a href="#faq" class="nav-link">FAQ</a></li>
             <li><a href="#events" class="nav-link">Workshops</a></li>
             <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -221,7 +221,6 @@ main{
 <main id="app">
     <!-- ===================== NEW Home ===================== -->
     <section id="home" class="page-section active">
-        <!-- ==== Hero background with overlay ==== -->
         <div style="
             position:relative;
             background:url('https://images.unsplash.com/photo-1601758003122-5a2fa838c389?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwyfHxwdXBweXxlbnwwfHx8fDE2ODk3MjUzMDQ&ixlib=rb-4.0.3&q=80&w=1200')
@@ -254,7 +253,6 @@ main{
             </div>
         </div>
 
-        <!-- Quick‑info cards -->
         <div class="cards" style="margin-top:2rem;gap:1.8rem;">
             <article class="card" style="flex:1 1 260px;">
                 <i class="fas fa-users fa-2x" style="color:var(--clr-teal);margin-bottom:.5rem;"></i>
@@ -275,7 +273,6 @@ main{
             </article>
         </div>
 
-        <!-- Hero video – replace YOUR_NEW_VIDEO_ID -->
         <div style="position:relative;padding-top:56.25%;margin-top:2rem;">
             <iframe src="https://www.youtube.com/embed/YOUR_NEW_VIDEO_ID?rel=0&showinfo=0"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;border-radius:8px;"
@@ -348,35 +345,12 @@ main{
         <p>We offer a range of classes and one‑to‑one sessions designed to meet the needs of puppies, adult dogs and families.</p>
 
         <div class="cards">
-            <article class="card">
-                <h3>Puppy Classes (8‑20 weeks)</h3>
-                <p>Fun, reward‑based group classes teaching basic commands, socialisation and confidence building. Max 4 pups per class.</p>
-            </article>
-
-            <article class="card">
-                <h3>Adult Dog Classes</h3>
-                <p>Ideal for dogs that have completed puppy work or need a refresher on leash manners, recall and impulse control.</p>
-            </article>
-
-            <article class="card">
-                <h3>One‑to‑One (121) Sessions</h3>
-                <p>Tailored home visits where Emma works directly with you and your dog to target specific behaviours. 60 min per session.</p>
-            </article>
-
-            <article class="card">
-                <h3>Behaviour Support</h3>
-                <p>Professional help for reactivity, excessive barking, separation anxiety, or any challenge that needs a personalised plan.</p>
-            </article>
-
-            <article class="card">
-                <h3>Workshops & Scent Classes</h3>
-                <p>Special one‑off workshops covering recall, lead‑walking, “Improvers” tricks, and a fun scent‑work introduction for all ages.</p>
-            </article>
-
-            <article class="card">
-                <h3>Kids‑Around‑Dogs Programme</h3>
-                <p>Designed for families – teaching children how to safely interact with dogs, read body language and build confidence. Runs quarterly.</p>
-            </article>
+            <article class="card"><h3>Puppy Classes (8‑20 weeks)</h3><p>Fun, reward‑based group classes teaching basic commands, socialisation and confidence building. Max 4 pups per class.</p></article>
+            <article class="card"><h3>Adult Dog Classes</h3><p>Ideal for dogs that have completed puppy work or need a refresher on leash manners, recall and impulse control.</p></article>
+            <article class="card"><h3>One‑to‑One (121) Sessions</h3><p>Tailored home visits where Emma works directly with you and your dog to target specific behaviours. 60 min per session.</p></article>
+            <article class="card"><h3>Behaviour Support</h3><p>Professional help for reactivity, excessive barking, separation anxiety, or any challenge that needs a personalised plan.</p></article>
+            <article class="card"><h3>Workshops & Scent Classes</h3><p>Special one‑off workshops covering recall, lead‑walking, “Improvers” tricks, and a fun scent‑work introduction for all ages.</p></article>
+            <article class="card"><h3>Kids‑Around‑Dogs Programme</h3><p>Designed for families – teaching children how to safely interact with dogs, read body language and build confidence. Runs quarterly.</p></article>
         </div>
     </section>
 
@@ -386,26 +360,9 @@ main{
         <p>All courses include a free starter manual, a bag of Natures Menu treats and a graduation rosette.</p>
 
         <div class="cards" style="gap:2rem;">
-            <article class="card">
-                <h3>Basic Obedience</h3>
-                <p class="price">£120 / 6 weeks</p>
-                <p>3 sessions per month, 90 min each.</p>
-                <p><strong>Early‑bird discount</strong>: £110 if you book before 1 May.</p>
-            </article>
-
-            <article class="card">
-                <h3>Socialisation</h3>
-                <p class="price">£100 / 4 weeks</p>
-                <p>Weekly play‑dates, exposure to public places, other puppies.</p>
-                <p><strong>Bundle</strong>: + £20 for a Pup‑Play kit (toy + treat bag).</p>
-            </article>
-
-            <article class="card">
-                <h3>Advanced Tricks</h3>
-                <p class="price">£150 / 8 weeks</p>
-                <p>Fun tricks, confidence building and mental stimulation.</p>
-                <p><strong>Free</strong>: training manual & treats for every enrolment.</p>
-            </article>
+            <article class="card"><h3>Basic Obedience</h3><p class="price">£120 / 6 weeks</p><p>3 sessions per month, 90 min each.</p><p><strong>Early‑bird discount</strong>: £110 if you book before 1 May.</p></article>
+            <article class="card"><h3>Socialisation</h3><p class="price">£100 / 4 weeks</p><p>Weekly play‑dates, exposure to public places, other puppies.</p><p><strong>Bundle</strong>: + £20 for a Pup‑Play kit (toy + treat bag).</p></article>
+            <article class="card"><h3>Advanced Tricks</h3><p class="price">£150 / 8 weeks</p><p>Fun tricks, confidence building and mental stimulation.</p><p><strong>Free</strong>: training manual & treats for every enrolment.</p></article>
         </div>
     </section>
 
@@ -413,23 +370,9 @@ main{
     <section id="accreditations" class="page-section">
         <h2>Accreditations & Partners</h2>
         <div class="cards">
-            <article class="card">
-                <i class="fas fa-certificate fa-2x" style="color:var(--clr-teal);margin-bottom:.5rem;"></i>
-                <h3>ABTC‑Registered</h3>
-                <p>All trainers are Animal Behaviour Training Council members.</p>
-            </article>
-
-            <article class="card">
-                <i class="fas fa-paw fa-2x" style="color:var(--clr-teal);margin-bottom:.5rem;"></i>
-                <h3>Puppy Club Member</h3>
-                <p>Every enrolment gives free access to the exclusive Puppy Club resource hub.</p>
-            </article>
-
-            <article class="card">
-                <i class="fas fa-utensils fa-2x" style="color:var(--clr-teal);margin-bottom:.5rem;"></i>
-                <h3>Sponsored by Natures Menu</h3>
-                <p>Premium 95 % meat treats supplied to each class.</p>
-            </article>
+            <article class="card"><i class="fas fa-certificate fa-2x" style="color:var(--clr-teal);margin-bottom:.5rem;"></i><h3>ABTC‑Registered</h3><p>All trainers are Animal Behaviour Training Council members.</p></article>
+            <article class="card"><i class="fas fa-paw fa-2x" style="color:var(--clr-teal);margin-bottom:.5rem;"></i><h3>Puppy Club Member</h3><p>Every enrolment gives free access to the exclusive Puppy Club resource hub.</p></article>
+            <article class="card"><i class="fas fa-utensils fa-2x" style="color:var(--clr-teal);margin-bottom:.5rem;"></i><h3>Sponsored by Natures Menu</h3><p>Premium 95 % meat treats supplied to each class.</p></article>
         </div>
     </section>
 
@@ -450,15 +393,12 @@ main{
     <section id="gallery" class="page-section">
         <h2>Gallery</h2>
         <div class="gallery-grid">
-            <!-- Row 1 -->
             <img src="https://images.unsplash.com/photo-1601758003122-5a2fa838c389?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwyfHxwdXBweXxlbnwwfHx8fDE2ODk3MjUzMDQ&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Puppy with treat">
             <img src="https://images.unsplash.com/photo-1507146426996-8d2b5f9c39b0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMHdpdGh8ZW58MHx8fHwxNjg5NzI1NDM5&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Puppy group class">
             <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxkZXZpbHxlbnwwfHx8fDE2ODk3MjU0NTM&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Trainer coaching a puppy">
-
-            <!-- Row 2 -->
             <img src="https://images.unsplash.com/photo-1553410699-69e79db88903?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxweW5ldCUyMHRyaWFudHxlbnwwfHx8fDE2ODk3MjU0NzU&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Happy puppy after class">
             <img src="https://images.unsplash.com/photo-1525259797138-4cf3fc286842?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMHJlcHJlc2VudGF0aW9uZWx8ZW58MHx8fHwxNjg5NzI1NDYx&ixlib=rb-4.0.3&q=80&w=300"
@@ -467,8 +407,6 @@ main{
                  alt="Puppy learning to sit">
             <img src="https://images.unsplash.com/photo-1593175419498-8adcfb1dbb0c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMHRyYWluaW5nfGVufDB8fHx8MTY4OTcyNTU0MA&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Puppy playing with a ball">
-
-            <!-- Row 3 -->
             <img src="https://images.unsplash.com/photo-1583337130417-334a0a8a13bc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwYXRpbmc4JTIwcHVwcHl8ZW58MHx8fHwxNjg5NzI1NTU0&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Puppy on a grassy field">
             <img src="https://images.unsplash.com/photo-1558980664-df7a8341e1c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMGxhYnV0dW0lMjBqdXN0aW1nb7R8ZW58MHx8fHwxNjg5NzI1NTYy&ixlib=rb-4.0.3&q=80&w=300"
@@ -477,8 +415,6 @@ main{
                  alt="Dog in a park – socialisation">
             <img src="https://images.unsplash.com/photo-1537368919423-9ae54c51ecf3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMGNhbmZyYW5jaWxpYW58ZW58MHx8fHwxNjg5NzI1NTg0&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Puppy on a leash learning to walk">
-
-            <!-- Row 4 (extra) -->
             <img src="https://images.unsplash.com/photo-1598288374603-03c3b86b1ad5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHxwdXBweSUyMHRyYWluaW5nfGVufDB8fHx8MTY4OTcyNTYwMA&ixlib=rb-4.0.3&q=80&w=300"
                  alt="Puppy getting a treat after a command">
             <img src="https://images.unsplash.com/photo-1591840078368-1a12f8143e1c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwyMDkwMTl8MHwxfHNlYXJjaHwxfHx0cmlhc19wdXJwb3NlJTIwZWxzZXJ0ZWZpY2V8ZW58MHx8fHwxNjg5NzI1NjE2&ixlib=rb-4.0.3&q=80&w=300"
@@ -494,7 +430,7 @@ main{
     <section id="reviews" class="page-section">
         <h2>Reviews</h2>
 
-        <!-- ---- Custom testimonial carousel ---- -->
+        <!-- Custom testimonial carousel -->
         <div class="testimonials">
             <div class="testimonial active">
                 <p>“A friendly, professional class – the trainer really knows how to work with pups! Our 10‑week‑old Labrador is now obedient and confident.”</p>
@@ -520,41 +456,73 @@ main{
             }, 5000);
         </script>
 
-        <!-- ---- Google Reviews widget (real Google reviews) ---- -->
+        <!-- Google Reviews widget -->
         <h3 style="margin-top:2rem;">Customer Reviews (Google)</h3>
         <script src="https://unpkg.com/google-reviews-widget@latest/dist/widget.min.js"></script>
         <div id="google-reviews"
              data-place-id="YOUR_PLACE_ID"
              data-limit="5"></div>
-        <!-- Replace YOUR_PLACE_ID with the actual Google Place ID for Puppy School Harpenden -->
+        <!-- Replace YOUR_PLACE_ID with the real Google Place ID for Puppy School Harpenden -->
     </section>
 
-    <!-- ===================== FAQ ===================== -->
+    <!-- ===================== Expanded FAQ ===================== -->
     <section id="faq" class="page-section">
         <h2>Frequently Asked Questions</h2>
+
         <details><summary>What age should my puppy be to join?</summary>
             <p>We accept puppies from 8 weeks up to 20 weeks (or a little older if the vet clears them).</p>
         </details>
+
         <details><summary>Do I need to bring my own treats?</summary>
             <p>All treats used during class are provided. You may bring a favourite snack for home practice.</p>
         </details>
+
         <details><summary>How long is each session?</summary>
             <p>Each class runs for 90 minutes, once per week.</p>
         </details>
+
         <details><summary>What is your cancellation policy?</summary>
             <p>We ask for 48 hours notice; otherwise the full class fee applies.</p>
         </details>
+
         <details><summary>Can I book a private 1‑to‑1 session?</summary>
             <p>Yes – use the “Workshops” section to schedule a Calendly 121 session.</p>
         </details>
+
         <details><summary>Are vaccinations required?</summary>
             <p>All puppies must be up‑to‑date on core vaccinations and cleared by a vet before attending.</p>
         </details>
+
         <details><summary>Do you offer a ‘Puppy Club’ membership?</summary>
             <p>Every enrolment gives free access to our exclusive Puppy Club online resource hub.</p>
         </details>
+
         <details><summary>What makes your training different?</summary>
             <p>We use only positive reinforcement, run tiny class sizes, and provide a free manual and treats with every enrolment.</p>
+        </details>
+
+        <details><summary>How many puppies are in each class?</summary>
+            <p>Maximum 4 puppies per class – this ensures plenty of individual attention.</p>
+        </details>
+
+        <details><summary>Do you accept walk‑ins?</summary>
+            <p>We prefer pre‑booking to guarantee a place, but you can call us to check availability.</p>
+        </details>
+
+        <details><summary>What payment methods do you accept?</summary>
+            <p>Bank transfer, cash, and contactless card payments are all accepted.</p>
+        </details>
+
+        <details><summary>Is there a trial class before I commit?</summary>
+            <p>Yes – the first class is completely free, no obligation to continue.</p>
+        </details>
+
+        <details><summary>What if my puppy has special needs?</summary>
+            <p>Our trainers are experienced with anxiety, shyness and mild behavioural issues – we’ll adapt the curriculum.</p>
+        </details>
+
+        <details><summary>Do you provide a graduate certificate?</summary>
+            <p>Every puppy receives a graduation rosette and a printed manual as a keepsake.</p>
         </details>
     </section>
 
@@ -564,18 +532,15 @@ main{
         <ul style="list-style:none;">
             <li style="margin-bottom:1rem;">
                 <strong>Recall & Lead‑Walking</strong> – 12 May, 10‑12 am (Harpenden Community Centre) –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/recall" class="btn"
-                   target="_blank">Book</a>
+                <a href="https://calendly.com/YOUR_CALENDLY_ID/recall" class="btn" target="_blank">Book</a>
             </li>
             <li style="margin-bottom:1rem;">
                 <strong>Fun Tricks for Kids</strong> – 19 May, 2‑4 pm –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/tricks" class="btn"
-                   target="_blank">Book</a>
+                <a href="https://calendly.com/YOUR_CALENDLY_ID/tricks" class="btn" target="_blank">Book</a>
             </li>
             <li style="margin-bottom:1rem;">
                 <strong>Puppy Socialisation Games</strong> – 26 May, 11‑1 pm –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/socialisation" class="btn"
-                   target="_blank">Book</a>
+                <a href="https://calendly.com/YOUR_CALENDLY_ID/socialisation" class="btn" target="_blank">Book</a>
             </li>
         </ul>
     </section>
@@ -606,9 +571,7 @@ main{
             <div class="form-group">
                 <label for="message">Message</label>
                 <i class="fas fa-comment-dots icon"></i>
-                <textarea id="message"
-                          placeholder="Tell us about your puppy or ask a question…"
-                          required></textarea>
+                <textarea id="message" placeholder="Tell us about your puppy or ask a question…" required></textarea>
             </div>
 
             <button type="submit" class="btn">Send Message</button>
@@ -619,7 +582,6 @@ main{
             <p><strong>Email:</strong> hello@puppyschoolharpenden.com</p>
             <p><strong>Address:</strong> 12 Bark Lane, Harpenden, AL5 1AB</p>
 
-            <!-- Google Map (Harpenden) -->
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.578939617966!2d-0.39329268428103874!3d51.80593817969781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487616ba4d2c0a83%3A0x6c610703bf2e354d!2sHarpenden%2C%20UK!5e0!3m2!1sen!2sus!4v1728347200000"
                 width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -647,12 +609,9 @@ main{
 <script>
     const banner = document.getElementById('cookie-banner');
     const acceptBtn = document.getElementById('accept-cookies');
-
-    if (localStorage.getItem('cookiesAccepted')) {
-        banner.style.display = 'none';
-    }
+    if (localStorage.getItem('cookiesAccepted')) banner.style.display = 'none';
     acceptBtn.addEventListener('click', () => {
-        localStorage.setItem('cookiesAccepted', 'true');
+        localStorage.setItem('cookiesAccepted','true');
         banner.style.display = 'none';
     });
 </script>
@@ -662,7 +621,7 @@ main{
     const sections = document.querySelectorAll('.page-section');
     const navLinks = document.querySelectorAll('.nav-link');
 
-    function route() {
+    function route(){
         const hash = window.location.hash.replace('#','') || 'home';
         sections.forEach(s => s.classList.toggle('active', s.id===hash));
         navLinks.forEach(l => {
@@ -673,16 +632,12 @@ main{
     window.addEventListener('hashchange', route);
     window.addEventListener('DOMContentLoaded', () => {
         route();
-
-        // smooth navigation (prevent jump)
         navLinks.forEach(l => {
             l.addEventListener('click', e => {
                 e.preventDefault();
                 window.location.hash = l.getAttribute('href');
             });
         });
-
-        // contact form – simple thank‑you (replace with real backend later)
         const form = document.getElementById('contactForm');
         form.addEventListener('submit', e => {
             e.preventDefault();
