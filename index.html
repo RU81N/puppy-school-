@@ -22,17 +22,21 @@
 /* ==== Global ==== */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
+
+/* ----- Page background ----- */
 body{
     font-family:'Poppins',Arial,sans-serif;
     line-height:1.6;
     color:#333;
-    background:#fdf5e6;   /* light background for contrast */
+    background:#f8efe9;   /* eggshell white */
 }
+
+/* ----- Colour palette (primary is burnt‑orange, background of sections stays white) ----- */
 :root{
     --clr-primary:#BF5700;   /* burnt orange – header/footer */
     --clr-accent:#FF7F00;    /* brighter orange – buttons & highlights */
-    --clr-teal:#006d77;      /* teal (kept for small accents) */
-    --clr-bg:#fff;
+    --clr-teal:#006d77;      /* teal (kept for small icons) */
+    --clr-bg:#fff;           /* inner sections stay pure white */
 }
 
 /* ==== Header ==== */
@@ -451,200 +455,4 @@ main{
             let cur = 0;
             setInterval(() => {
                 tpls[cur].classList.remove('active');
-                cur = (cur + 1) % tpls.length;
-                tpls[cur].classList.add('active');
-            }, 5000);
-        </script>
-
-        <!-- Google Reviews widget -->
-        <h3 style="margin-top:2rem;">Customer Reviews (Google)</h3>
-        <script src="https://unpkg.com/google-reviews-widget@latest/dist/widget.min.js"></script>
-        <div id="google-reviews"
-             data-place-id="YOUR_PLACE_ID"
-             data-limit="5"></div>
-        <!-- Replace YOUR_PLACE_ID with the real Google Place ID for Puppy School Harpenden -->
-    </section>
-
-    <!-- ===================== Expanded FAQ ===================== -->
-    <section id="faq" class="page-section">
-        <h2>Frequently Asked Questions</h2>
-
-        <details><summary>What age should my puppy be to join?</summary>
-            <p>We accept puppies from 8 weeks up to 20 weeks (or a little older if the vet clears them).</p>
-        </details>
-
-        <details><summary>Do I need to bring my own treats?</summary>
-            <p>All treats used during class are provided. You may bring a favourite snack for home practice.</p>
-        </details>
-
-        <details><summary>How long is each session?</summary>
-            <p>Each class runs for 90 minutes, once per week.</p>
-        </details>
-
-        <details><summary>What is your cancellation policy?</summary>
-            <p>We ask for 48 hours notice; otherwise the full class fee applies.</p>
-        </details>
-
-        <details><summary>Can I book a private 1‑to‑1 session?</summary>
-            <p>Yes – use the “Workshops” section to schedule a Calendly 121 session.</p>
-        </details>
-
-        <details><summary>Are vaccinations required?</summary>
-            <p>All puppies must be up‑to‑date on core vaccinations and cleared by a vet before attending.</p>
-        </details>
-
-        <details><summary>Do you offer a ‘Puppy Club’ membership?</summary>
-            <p>Every enrolment gives free access to our exclusive Puppy Club online resource hub.</p>
-        </details>
-
-        <details><summary>What makes your training different?</summary>
-            <p>We use only positive reinforcement, run tiny class sizes, and provide a free manual and treats with every enrolment.</p>
-        </details>
-
-        <details><summary>How many puppies are in each class?</summary>
-            <p>Maximum 4 puppies per class – this ensures plenty of individual attention.</p>
-        </details>
-
-        <details><summary>Do you accept walk‑ins?</summary>
-            <p>We prefer pre‑booking to guarantee a place, but you can call us to check availability.</p>
-        </details>
-
-        <details><summary>What payment methods do you accept?</summary>
-            <p>Bank transfer, cash, and contactless card payments are all accepted.</p>
-        </details>
-
-        <details><summary>Is there a trial class before I commit?</summary>
-            <p>Yes – the first class is completely free, no obligation to continue.</p>
-        </details>
-
-        <details><summary>What if my puppy has special needs?</summary>
-            <p>Our trainers are experienced with anxiety, shyness and mild behavioural issues – we’ll adapt the curriculum.</p>
-        </details>
-
-        <details><summary>Do you provide a graduate certificate?</summary>
-            <p>Every puppy receives a graduation rosette and a printed manual as a keepsake.</p>
-        </details>
-    </section>
-
-    <!-- ===================== Workshops / Events ===================== -->
-    <section id="events" class="page-section">
-        <h2>Upcoming Workshops</h2>
-        <ul style="list-style:none;">
-            <li style="margin-bottom:1rem;">
-                <strong>Recall & Lead‑Walking</strong> – 12 May, 10‑12 am (Harpenden Community Centre) –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/recall" class="btn" target="_blank">Book</a>
-            </li>
-            <li style="margin-bottom:1rem;">
-                <strong>Fun Tricks for Kids</strong> – 19 May, 2‑4 pm –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/tricks" class="btn" target="_blank">Book</a>
-            </li>
-            <li style="margin-bottom:1rem;">
-                <strong>Puppy Socialisation Games</strong> – 26 May, 11‑1 pm –
-                <a href="https://calendly.com/YOUR_CALENDLY_ID/socialisation" class="btn" target="_blank">Book</a>
-            </li>
-        </ul>
-    </section>
-
-    <!-- ===================== Contact ===================== -->
-    <section id="contact" class="page-section">
-        <h2>Get in Touch</h2>
-
-        <form id="contactForm" class="form-wrapper">
-            <div class="form-group">
-                <label for="name">Your Name</label>
-                <i class="fas fa-user icon"></i>
-                <input id="name" type="text" placeholder="e.g. Emma Brown" required>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Your Email</label>
-                <i class="fas fa-envelope icon"></i>
-                <input id="email" type="email" placeholder="e.g. emma@example.com" required>
-            </div>
-
-            <div class="form-group">
-                <label for="phone">Phone (optional)</label>
-                <i class="fas fa-phone icon"></i>
-                <input id="phone" type="tel" placeholder="e.g. 01234 567 890">
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <i class="fas fa-comment-dots icon"></i>
-                <textarea id="message" placeholder="Tell us about your puppy or ask a question…" required></textarea>
-            </div>
-
-            <button type="submit" class="btn">Send Message</button>
-        </form>
-
-        <div class="contact-info" style="margin-top:1.5rem;">
-            <p><strong>Phone:</strong> 01234 567 890</p>
-            <p><strong>Email:</strong> hello@puppyschoolharpenden.com</p>
-            <p><strong>Address:</strong> 12 Bark Lane, Harpenden, AL5 1AB</p>
-
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.578939617966!2d-0.39329268428103874!3d51.80593817969781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487616ba4d2c0a83%3A0x6c610703bf2e354d!2sHarpenden%2C%20UK!5e0!3m2!1sen!2sus!4v1728347200000"
-                width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-</main>
-
-<footer class="site-footer">
-    <p>© 2024 Puppy School Harpenden – All rights reserved.</p>
-    <div class="social-icons">
-        <a href="https://facebook.com/YourPage" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://instagram.com/YourPage" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="https://twitter.com/YourPage" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-    </div>
-</footer>
-
-<!-- Live Chat – Tidio (replace YOUR_TIDIO_SITE_ID) -->
-<script src="//code.tidio.co/YOUR_TIDIO_SITE_ID.js" async></script>
-
-<!-- GDPR Cookie banner -->
-<div id="cookie-banner">
-    <span>We use cookies to improve your experience. By continuing, you accept our <a href="#" style="color:#ff7043;">Cookie Policy</a>.</span>
-    <button id="accept-cookies">Got it</button>
-</div>
-<script>
-    const banner = document.getElementById('cookie-banner');
-    const acceptBtn = document.getElementById('accept-cookies');
-    if (localStorage.getItem('cookiesAccepted')) banner.style.display = 'none';
-    acceptBtn.addEventListener('click', () => {
-        localStorage.setItem('cookiesAccepted','true');
-        banner.style.display = 'none';
-    });
-</script>
-
-<!-- Simple hash‑based SPA router -->
-<script>
-    const sections = document.querySelectorAll('.page-section');
-    const navLinks = document.querySelectorAll('.nav-link');
-
-    function route(){
-        const hash = window.location.hash.replace('#','') || 'home';
-        sections.forEach(s => s.classList.toggle('active', s.id===hash));
-        navLinks.forEach(l => {
-            const target = l.getAttribute('href').replace('#','');
-            l.classList.toggle('active', target===hash);
-        });
-    }
-    window.addEventListener('hashchange', route);
-    window.addEventListener('DOMContentLoaded', () => {
-        route();
-        navLinks.forEach(l => {
-            l.addEventListener('click', e => {
-                e.preventDefault();
-                window.location.hash = l.getAttribute('href');
-            });
-        });
-        const form = document.getElementById('contactForm');
-        form.addEventListener('submit', e => {
-            e.preventDefault();
-            alert('Thank you! We’ll get back to you shortly.');
-            form.reset();
-        });
-    });
-</script>
-</body>
-</html>
+                cur =
